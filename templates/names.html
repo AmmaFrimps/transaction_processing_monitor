@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- features Section Start -->
+    <div id="app-features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Citizens</p>
+                <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">Driver Vehicle and Licensing Authority</h2>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            {% for citizen in results_DVLA %}
+                                <tr>
+                                    <td>{{ citizen.first_name }}</td>
+                                    <td>{{ citizen.last_name }}</td>
+                                    <td>{{ citizen.age }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">Electoral Commission</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            {% for citizen in results_EC %}
+                                <tr>
+                                    <td>{{ citizen.first_name }}</td>
+                                    <td>{{ citizen.last_name }}</td>
+                                    <td>{{ citizen.age }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">National Health Insurance Authority</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            {% for citizen in results_NHIA %}
+                                <tr>
+                                    <td>{{ citizen.first_name }}</td>
+                                    <td>{{ citizen.last_name }}</td>
+                                    <td>{{ citizen.age }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">Ghana Immigration Service</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            {% for citizen in results_GIS %}
+                                <tr>
+                                    <td>{{ citizen.first_name }}</td>
+                                    <td>{{ citizen.last_name }}</td>
+                                    <td>{{ citizen.age }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- features Section End -->
+{% endblock %}

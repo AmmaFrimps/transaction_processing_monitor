@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Proton - Bootstrap 4 Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/line-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nivo-lightbox.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+
+</head>
+
+<body>
+
+<!-- Header Section Start -->
+<header id="home" class="hero-area-2">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+            <a href="{{ url_for('index') }}" class="navbar-brand"><img style="width: 120px;"
+                                                                       src="{{ url_for('static', filename = 'img/nia.png') }}"
+                                                                       alt=""></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row space-100">
+            <div class="col-lg-7 col-md-12 col-xs-12">
+                <div class="contents">
+                    <h2 class="head-title">Get Your App Landing Page <br> With Proton Template</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse unde blanditiis nostrum mollitia
+                        aliquam sed. Numquam ipsum unde repellendus similique autem non ab quibusdam enim provident
+                        distinctio! Fugit tenetur, iusto.</p>
+                    <div class="header-button">
+                        <a href="#" class="btn btn-border-filled">Search</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-xs-12">
+                <div class="intro-img">
+                    <img src="{{ url_for('static', filename = 'img/header.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
+<br><br><br><br>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader" id="loader-1"></div>
+</div>
+<!-- End Preloader -->
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.mixitup.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/scrolling-nav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/nivo-lightbox.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/form-validator.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/contact-form-script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
